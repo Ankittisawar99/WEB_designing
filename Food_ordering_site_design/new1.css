@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    margin: 10px 35px;
+}
+
+*root {
+    --navbar-height: 59px;
+}
+
+.d img {
+    margin: 5px 6px;
+    height: 54px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul li {
+    color: black;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    border-radius: 16px;
+    padding: 32px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/* #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 9px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+} */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    height: 578px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('271681.jpeg')no-repeat center center/cover;
+    height: 578px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+    top: 0px;
+    left: 0px;
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h-secondary {
+    font-size: 2.2rem;
+    padding: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn {
+    display: flex;
+    color: white;
+    align-items: center;
+    position: relative;
+    left: 551px;
+    padding: 13px 30px;
+    margin: 13px;
+    border-radius: 37px;
+    border: 2px solid white;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+
+/* services section */
+
+#services1 {
+    margin: 34px;
+}
+
+#services1 .box {
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 30px 100px;
+    border-radius: 23px;
+    background-color: rgb(234, 245, 245);
+    font-size: 10px;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services2 .box {
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid brown;
+    padding: 43px;
+    margin: 30px 100px;
+    border-radius: 23px;
+    font-size: 10px;
+    background-color: rgb(234, 245, 245);
+}
+
+#services2 {
+    margin: 49px;
+    display: flex;
+    height: 342px;
+}
+
+#services2 .box img {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+#services .box img {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+#services1 .box img {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* client services */
+
+#client-section {
+    height: 344px;
+    position: relative;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-items {
+    padding: 34px;
+}
+
+#clients img {
+    height: 110px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('a.jpeg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact-us-contact-email-phone.jpg') no-repeat center center/cover;
+}
+
+#contact3 {
+    position: relative;
+}
+
+#contact3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact-us-contact-email-phone.jpg') no-repeat center center/cover;
+}
+
+.form-group textarea {
+    width: 200%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+
+.form-group input {
+    width: 200%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact3-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 59px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+
+/* contact-box form{
+    width:40%;
+    padding: 100%;
+} */
+
+.form-group label {
+    font-size: 1.3rem;
+}
+
+.form-group {
+    width: 40%;
+    display: inline-block;
+    display: block;
+    border-radius: 9px;
+}
+
+.btn2 {
+    display: flex;
+    color: white;
+    align-items: center;
+    left: 500px;
+    padding: 13px 30px;
+    margin: 13px;
+    border-radius: 37px;
+    border: 2px solid white;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}

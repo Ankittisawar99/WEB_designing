@@ -1,0 +1,136 @@
+/* Navigation */
+
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+
+/* Home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 16px;
+    justify-content: center;
+    align-items: center;
+    height: 571px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('271681.jpeg')no-repeat center center/cover;
+    height: 571px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+    top: 0px;
+    left: 0px;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(234, 245, 245);
+}
+
+#services .box img {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+#home p {
+    font-size: 13px;
+}
+
+
+/* Services section  */
+
+#services {
+    flex-direction: column;
+}
+
+#services1 .box {
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid brown;
+    padding: 34px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 23px;
+    background-color: rgb(234, 245, 245);
+    font-size: 10px;
+}
+
+#services .box {
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+
+
+/* Clients section */
+
+#clients {
+    flex-wrap: wrap;
+}
+
+#clients img {
+    width: 66px;
+    padding: 6px;
+    height: auto;
+}
+
+
+/* Contact us section */
+
+#contact-box form {
+    width: 80%;
+}
+
+#services2 {
+    margin: 49px;
+    display: inline;
+}
+
+
+/* Footer */
+
+
+/* Utility classes */
+
+.h-primary {
+    font-size: 26px;
+}
+
+.btn {
+    font-size: 13px;
+    padding: 4px 8px;
+    position: absolute;
+    left: 100px;
+}
+
+.btn2 {
+    font-size: 13px;
+    padding: 4px 8px;
+}
