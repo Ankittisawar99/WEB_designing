@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .header {
+            position: sticky;
+            top: 0px;
+        }
+        
+        .head1 {
+            width: 100%;
+            background-color: rgb(134, 8, 8);
+            height: 45px;
+            color: white;
+            font-size: 23px;
+        }
+        
+        .head1 img {
+            filter: invert(100%);
+            /* filter:invert(100%); */
+            margin: 0px;
+            height: 45px;
+            padding: 0px;
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            /* display: inline-block; */
+        }
+        
+        #icon1 img {
+            margin: 0px;
+            height: 45px;
+            padding: 0px;
+            position: absolute;
+            right: 123px;
+            top: 0px;
+        }
+        
+        #icon2 img {
+            margin: 0px;
+            height: 45px;
+            padding: 0px;
+            position: absolute;
+            right: 65px;
+            top: 0px;
+        }
+        
+        li {
+            padding: 10px;
+            margin-left: 24px;
+            text-decoration: none;
+        }
+        
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .navbar {
+            width: 700px;
+            margin: 10px auto;
+        }
+        
+        .navbar ul li a:hover,
+        .navbar ul li a.active {
+            color: rgb(235 62 10);
+            text-decoration: underline;
+            font-size: 40px;
+        }
+        
+        .navbar ul li a {
+            margin: 5px;
+            font-size: 36px;
+            color: #ab2323;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        .img1 img {
+            display: inline-block;
+            height: 420px;
+            width: 500px;
+            margin-left: 15px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        
+        .img2 img {
+            display: inline-block;
+            height: 500px;
+            width: 700px;
+            margin-top: 40px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .img1 {
+            display: inline-block;
+            width: 600px;
+        }
+        
+        .img2 {
+            display: inline-block;
+            width: 600px;
+        }
+        
+        p {
+            color: revert;
+            width: 500px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        
+        h1 {
+            color: rebeccapurple;
+            margin-bottom: 3px;
+            width: 500px;
+            margin-left: 10px;
+            text-align: center;
+        }
+        
+        .para {
+            width: 715px;
+            margin-left: 30px;
+            margin-top: 0px;
+            text-align: center;
+        }
+        
+        .para1 {
+            width: 715px;
+            text-align: center;
+            margin-left: 30px;
+            margin-top: 0px;
+        }
+        
+        .bgimg img {
+            height: 1200px;
+            width: 1250px;
+            /* margin: 15px; */
+            /* margin-top: 50px; */
+            /* margin: 50px auto; */
+            margin: 49px;
+        }
+        
+        body {
+            font-family: 'Teko', sans-serif;
+        }
+        /* #fomi {
+   
+    width: 450px;
+    margin: auto;
+    height: 420px;
+
+
+} */
+        
+        .container {
+            height: 100%;
+            width: 100%;
+        }
+        
+        footer {
+            margin-top: 202px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            background-color: rgb(134, 8, 8);
+        }
+        
+        #fomi {
+            width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            animation-name: ankit;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: relative;
+            margin-top: 40px;
+        }
+        
+        @keyframes ankit {
+            0% {
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+            }
+            50% {
+                top: 10px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+            }
+            100% {
+                top: 0px;
+                bottom: 10px;
+            }
+        }
+        
+        .fomi input {
+            padding: 10px;
+            margin: 25px;
+            text-align: center;
+            width: 380px;
+            border: solid #ef1d1d;
+            border-radius: 30px;
+        }
+        
+        div#heading {
+            text-align: center;
+            font-size: 45px;
+            color: #f12c2c;
+            text-decoration: underline;
+        }
+        
+        button {
+            color: white;
+            background-color: #d92a2a;
+            border: none;
+            align-items: center;
+            border-radius: 15px;
+            font-size: 25px;
+            width: 120px;
+            height: 40px;
+            /* margin-left: 190px; */
+        }
+        
+        @media only screen and (max-width: 712px) {
+            * {
+                margin: 0;
+                overflow: auto;
+            }
+            .navbar {
+                width: 100%;
+                margin: 10px auto;
+            }
+            div#heading {
+                text-align: center;
+                font-size: 25px;
+                color: #f12c2c;
+                text-decoration: underline;
+            }
+            .fomi input {
+                padding: 5px;
+                margin: 21px;
+                text-align: center;
+                width: 250px;
+                border: solid #ef1d1d;
+                border-radius: 30px;
+            }
+            button {
+                color: white;
+                background-color: #d92a2a;
+                border: none;
+                align-items: center;
+                border-radius: 15px;
+                font-size: 15px;
+                width: 100px;
+                height: 30px;
+                /* margin-left: 190px; */
+            }
+            #fomi {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                height: 500px;
+                justify-content: center;
+                align-items: center;
+                animation-name: ankit;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                position: relative;
+                margin-top: 40px;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            .header {
+                position: sticky;
+                top: 0px;
+            }
+            #blogs {
+                width: 100%;
+            }
+            .head1 {
+                width: 100%;
+                background-color: rgb(134, 8, 8);
+                height: 45px;
+                color: white;
+                font-size: 23px;
+            }
+            .head1 img {
+                filter: invert(100%);
+                /* filter:invert(100%); */
+                margin: 0px;
+                height: 45px;
+                padding: 0px;
+                position: absolute;
+                right: 10px;
+                top: 0px;
+                /* display: inline-block; */
+            }
+            #icon1 img {
+                margin: 0px;
+                height: 45px;
+                padding: 0px;
+                position: absolute;
+                right: 123px;
+                top: 0px;
+            }
+            #icon2 img {
+                margin: 0px;
+                height: 45px;
+                padding: 0px;
+                position: absolute;
+                right: 65px;
+                top: 0px;
+            }
+            li {
+                padding: 6px;
+                text-decoration: none;
+                margin-left: 0;
+            }
+            .navbar ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+            }
+            .navbar {
+                width: 100%;
+                margin: 10px auto;
+            }
+            .navbar ul li a:hover,
+            .navbar ul li a.active {
+                color: rgb(235 62 10);
+                text-decoration: underline;
+                font-size: 20px;
+            }
+            .navbar ul li a {
+                margin: 5px;
+                font-size: 15px;
+                color: #ab2323;
+                list-style: none;
+                text-decoration: none;
+            }
+            .section {
+                height: 100%;
+                width: 80%;
+                margin: auto;
+            }
+            #sec {
+                height: 100%;
+                width: 80%;
+                margin: auto;
+            }
+            .img1 img {
+                display: inline-block;
+                height: 330px;
+                width: 332px;
+                /* margin-left: 15px; */
+                margin-bottom: 20px;
+                margin: 20px;
+                margin-top: 20px;
+            }
+            .img2 img {
+                display: inline-block;
+                height: 350px;
+                width: 90%;
+                position: relative;
+                margin-top: 40px;
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+            .img1 {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                align-items: center;
+                width: 100%;
+            }
+            p {
+                color: revert;
+                width: 90%;
+                margin-bottom: 20px;
+                text-align: center;
+                margin-left: 10px;
+            }
+            .img2 {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                align-items: center;
+                width: 100%;
+            }
+            h1 {
+                color: rebeccapurple;
+                margin-bottom: 3px;
+                margin-left: 10px;
+                width: 90%;
+                text-align: center;
+            }
+            p#hi {
+                width: 90%;
+            }
+            .para {
+                width: 80%;
+                /* margin-left: 30px; */
+                margin-top: 0px;
+                text-align: center;
+            }
+            .para1 {
+                width: 80%;
+                text-align: center;
+                /* margin-left: 30px; */
+                margin-top: 0px;
+            }
+            .bgimg img {
+                height: 600px;
+                width: 100%;
+                /* margin: 50px auto; */
+            }
+            body {
+                font-family: 'Teko', sans-serif;
+            }
+            footer {
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                width: 100%;
+                background-color: rgb(134, 8, 8);
+            }
+            .pic img {
+                height: 600px;
+                width: 100%;
+                /* margin-left: 165px; */
+                /* margin: 42px 115px; */
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Roboto&family=Teko:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="head1">
+            <ul>
+                <li>Latest Blogs </li>
+            </ul>
+            <a href="#"><img src="./5279111_network_fb_social media_facebook_facebook logo_icon.png" alt="fb"></a>
+            <div id="icon1">
+                <a href="#"><img src="./5279112_camera_instagram_social media_instagram logo_icon.png" alt="insta"></a>
+            </div>
+            <div id="icon2">
+                <a href="#"><img src="./5279123_tweet_twitter_twitter logo_icon.png" alt="twitter"></a>
+            </div>
+
+
+
+        </div>
+        <div class="navbar">
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="contact.html" class="active">CONTACT US</a></li>
+                <li><a href="#">BLOGS</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+    <div class="container">
+        <section id="fomi">
+            <div id="heading">
+                Contact Us
+            </div>
+            <div Class="fomi">
+
+                <input type="text" id="Name" name="text" placeholder="Enter your Name">
+            </div>
+            <div Class="fomi">
+                <input type="email" id="email" name="email" placeholder="Enter your Email"></div>
+            <div Class="fomi">
+                <input type="number" id="number" name="text" placeholder="Enter your Number"></div>
+            <div Class="fomi">
+                <input type="Address" id="Address" name="Address" placeholder="Enter your Address"></div>
+
+
+            <button>Submit</button>
+    </div>
+
+
+    </section>
+    <footer>@copyright-ankittisawar</footer>
+    </div>
+</body>
+
+</html>
